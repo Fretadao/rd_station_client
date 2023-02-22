@@ -111,7 +111,7 @@ RSpec/ExampleLength:
 
 RSpec/FilePath:
   CustomTransform:
-    FHTTPClient: f_http_client
+    RDStationClient: rd_station_client
 
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
