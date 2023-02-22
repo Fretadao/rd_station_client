@@ -4,7 +4,7 @@ require_relative 'lib/rd_station_client/version'
 
 Gem::Specification.new do |spec|
   spec.name = 'rd_station_client'
-  spec.version = RdStationClient::VERSION
+  spec.version = RDStationClient::VERSION
   spec.authors = ['Fretadao Tech Team']
   spec.email = ['tech@fretadao.com.br']
 
@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   # spec.add_dependency "example-gem", "~> 1.0"
+  spec.add_runtime_dependency 'dry-configurable'
 
   # For more information and examples about making a new gem, check out our
   # guide at: https://bundler.io/guides/creating_gem.html

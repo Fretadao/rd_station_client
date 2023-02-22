@@ -1,16 +1,27 @@
 GIT
   remote: https://github.com/Fretadao/f_http_client.git
-  revision: f4b7db1f3e07ee8bef860e83c08e29f4e83a33d6
-  branch: master
+  revision: 4e7497901865ecef54adb47b33070bb1c1caaacf
+  branch: bv-improve-gem-extendability
   specs:
     f_http_client (0.1.0)
       activesupport
+      addressable
+      dry-configurable
+      dry-initializer
       httparty
+
+GIT
+  remote: https://github.com/Fretadao/f_service.git
+  revision: 22d3e1c8bd4aa83b14f34b1af19aa4cd22b8ad8b
+  branch: master
+  specs:
+    f_service (0.2.0)
 
 PATH
   remote: .
   specs:
     rd_station_client (0.1.0)
+      dry-configurable
 
 GEM
   remote: https://rubygems.org/
@@ -29,6 +40,13 @@ GEM
       rexml
     diff-lcs (1.5.0)
     docile (1.4.0)
+    dry-configurable (1.0.1)
+      dry-core (~> 1.0, < 2)
+      zeitwerk (~> 2.6)
+    dry-core (1.0.0)
+      concurrent-ruby (~> 1.0)
+      zeitwerk (~> 2.6)
+    dry-initializer (3.1.1)
     hashdiff (1.0.1)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
@@ -100,12 +118,14 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
   f_http_client!
+  f_service!
   pry
   pry-nav
   rake (~> 13.0)

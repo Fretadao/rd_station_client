@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
-RSpec.describe RdStationClient do
-  it "has a version number" do
-    expect(RdStationClient::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+RSpec.describe RDStationClient do
+  describe 'versioning' do
+    it "has a version number" do
+      expect(RDStationClient::VERSION).not_to be nil
+    end
   end
 end
