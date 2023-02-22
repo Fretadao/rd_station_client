@@ -1,12 +1,25 @@
 # frozen_string_literal: true
 
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
 # Specify your gem's dependencies in rd_station_client.gemspec
 gemspec
 
-gem "rake", "~> 13.0"
+group :development do
+  gem 'f_http_client', github: 'Fretadao/f_http_client', branch: 'master'
+  gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rspec'
+end
 
-gem "rspec", "~> 3.0"
+group :test do
+  gem 'rspec', '~> 3.0'
+  gem 'simplecov'
+  gem 'webmock'
+end
 
-gem "rubocop", "~> 1.21"
+group :development, :test do
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'rake', '~> 13.0'
+end
