@@ -7,7 +7,7 @@ module RDStationClient
     setting :rd_code
     setting :redis do
       setting :pool_size, default: 5
-      setting :connection_params
+      setting :connection_params, default: {}
     end
   end
 end
