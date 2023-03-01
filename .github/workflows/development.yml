@@ -48,11 +48,6 @@ jobs:
 
     - name: Run Rspec
       run: bundle exec rspec -fp
-      env:
-        # The hostname used to communicate with the Redis service container
-        REDIS_HOST: redis
-        # The default Redis port
-        REDIS_PORT: 6379
 
     - name: Archive coverage
       uses: actions/upload-artifact@v3
