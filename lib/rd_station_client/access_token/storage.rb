@@ -1,11 +1,5 @@
 # frozen_string_literal: true
 
-require 'singleton'
-
-require 'redis'
-require 'connection_pool'
-require 'forwardable'
-
 module RDStationClient
   module AccessToken
     class Storage
