@@ -11,20 +11,16 @@ RSpec.describe RDStationClient::AccessToken::Storage do
     subject(:storage) { described_class.instance }
 
     let(:dummy_key) { 'rd_station_client:custom_key' }
-    let(:redis_host) { ENV.fetch('REDIS_HOST', 'localhost') }
-    let(:redis_port) { ENV.fetch('REDIS_PORT', 6379) }
-    let(:redis) { Redis.new(host: redis_host, port: redis_port) }
+    let(:redis) { Redis.new(host: 'localhost', port: '6379') }
 
     before do
       RDStationClient::Configuration.configure do |config|
         config.redis.pool_size = 10
-        config.redis.connection_params = { host: redis_host, port: redis_port }
+        config.redis.connection_params = { host: 'localhost', port: '6379' }
       end
     end
 
     around do |example|
-      puts redis_host
-      # puts JSON.pretty_generate(ENV.to_h)
       redis.del(dummy_key)
       example.run
       redis.del(dummy_key)
@@ -46,20 +42,16 @@ RSpec.describe RDStationClient::AccessToken::Storage do
     subject(:storage) { described_class.instance }
 
     let(:dummy_key) { 'rd_station_client:custom_key' }
-    let(:redis_host) { ENV.fetch('REDIS_HOST', 'localhost') }
-    let(:redis_port) { ENV.fetch('REDIS_PORT', 6379) }
-    let(:redis) { Redis.new(host: redis_host, port: redis_port) }
+    let(:redis) { Redis.new(host: 'localhost', port: '6379') }
 
     before do
       RDStationClient::Configuration.configure do |config|
         config.redis.pool_size = 10
-        config.redis.connection_params = { host: redis_host, port: redis_port }
+        config.redis.connection_params = { host: 'localhost', port: '6379' }
       end
     end
 
     around do |example|
-      puts redis_host
-      # puts JSON.pretty_generate(ENV.to_h)
       redis.del(dummy_key)
       example.run
       redis.del(dummy_key)
