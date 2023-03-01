@@ -12,7 +12,7 @@ module RDStationClient
     #       bio: 'My name is John Doe'
     #     }
     #   )
-    class Update < RDStationClient::Authencitated
+    class Update < RDStationClient::Authenticated
       private
 
       def make_request

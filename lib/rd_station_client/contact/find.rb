@@ -8,7 +8,7 @@ module RDStationClient
     #   RDStationClient::Contact::Update.(
     #     path_params: { identifier_type: 'email', identifier_value: 'contact@email.com' }
     #   )
-    class Find < RDStationClient::Authencitated
+    class Find < RDStationClient::Authenticated
       private
 
       def make_request

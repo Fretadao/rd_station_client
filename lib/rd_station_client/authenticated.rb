@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module RDStationClient
-  class Authencitated < RDStationClient::Base
+  class Authenticated < RDStationClient::Base
     AUTH_DATA_KEY = :auth_data
 
     def run
