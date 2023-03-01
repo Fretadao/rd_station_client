@@ -4,11 +4,8 @@
 
 require 'dry/configurable/test_interface'
 
-RDStationClient.configuration.enable_test_interface
-# module RDStationClient
-#   enable_test_interface
-# end
+RDStationClient::Configuration.enable_test_interface
 
 RSpec.configure do |config|
-  config.before { RDStationClient.configuration.reset_config }
+  config.before { RDStationClient::Configuration.reset_config }
 end
