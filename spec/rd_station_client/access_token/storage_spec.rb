@@ -56,6 +56,7 @@ RSpec.describe RDStationClient::AccessToken::Storage do
     end
 
     around do |example|
+      puts JSON.pretty_generate(ENV.to_h)
       redis.del(dummy_key)
       example.run
       redis.del(dummy_key)
