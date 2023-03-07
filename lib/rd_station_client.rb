@@ -15,6 +15,7 @@ require_relative 'rd_station_client/access_token/refresh'
 require_relative 'rd_station_client/authenticated'
 require_relative 'rd_station_client/contact/find'
 require_relative 'rd_station_client/contact/update'
+require_relative 'rd_station_client/event/create'
 
 module RDStationClient
 end

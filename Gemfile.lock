@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Fretadao/f_http_client.git
-  revision: d0f8d9b9b38a891f764841d500b0ca79b43ba661
+  revision: 95a2101f0efbac4d93619ff2e21842c74850748d
   branch: master
   specs:
     f_http_client (0.1.0)
@@ -59,7 +59,7 @@ GEM
     json (2.6.3)
     method_source (1.0.0)
     mini_mime (1.1.2)
-    minitest (5.17.0)
+    minitest (5.18.0)
     multi_xml (0.6.0)
     parallel (1.22.1)
     parser (3.2.1.0)
@@ -146,4 +146,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   2.4.7
+   2.4.6
