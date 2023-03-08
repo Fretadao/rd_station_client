@@ -6,3 +6,4 @@
 - Add Base gem;
 - Add Contact Find service;
 - Add Contact Update service;
+- Add Event Create service;

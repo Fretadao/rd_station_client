@@ -13,6 +13,7 @@ end
 require 'bundler/setup'
 require 'webmock/rspec'
 require 'f_service/rspec'
+require 'f_http_client/rspec'
 
 require 'rd_station_client'
 
