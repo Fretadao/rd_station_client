@@ -1,28 +1,10 @@
-GIT
-  remote: https://github.com/Fretadao/f_http_client.git
-  revision: 95a2101f0efbac4d93619ff2e21842c74850748d
-  branch: master
-  specs:
-    f_http_client (0.1.0)
-      activesupport
-      addressable
-      dry-configurable
-      dry-initializer
-      httparty
-
-GIT
-  remote: https://github.com/Fretadao/f_service.git
-  revision: 22d3e1c8bd4aa83b14f34b1af19aa4cd22b8ad8b
-  branch: master
-  specs:
-    f_service (0.2.0)
-
 PATH
   remote: .
   specs:
-    rd_station_client (0.1.0)
+    rd_station_client (0.2.0)
       connection_pool
       dry-configurable
+      f_http_client (>= 0.2.0)
       redis
 
 GEM
@@ -50,6 +32,14 @@ GEM
       concurrent-ruby (~> 1.0)
       zeitwerk (~> 2.6)
     dry-initializer (3.1.1)
+    f_http_client (0.2.0)
+      activesupport
+      addressable
+      dry-configurable
+      dry-initializer
+      f_service (>= 0.3.0)
+      httparty
+    f_service (0.3.0)
     hashdiff (1.0.1)
     httparty (0.21.0)
       mini_mime (>= 1.0.0)
@@ -132,8 +122,6 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  f_http_client!
-  f_service!
   pry
   pry-nav
   rake (~> 13.0)
