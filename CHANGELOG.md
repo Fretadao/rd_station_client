@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+- Add conversion event endpoint creation
+
 ## [0.2.0] - 2023-05-22
 
 - Add FHTTPClient gem as a runtime dependence.
