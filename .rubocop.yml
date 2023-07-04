@@ -12,6 +12,11 @@ AllCops:
     - '.git/**/*'
     - 'examples/**/*'
 
+##### RUBYGEMS #####
+
+Gemspec/RequireMFA:
+  Enabled: false
+
 ##### LAYOUT #####
 
 Layout/FirstArrayElementIndentation:
